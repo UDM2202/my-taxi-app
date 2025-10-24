@@ -30,17 +30,15 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className='Dashboard row__one w-full lg:ml-[300px] lg:w-[calc(100%-300px)] lg:h-screen lg:flex lg:flex-col'>
-      <div className='nav'>
+    <div className='Dashboard overflow-x-hidden row__one w-full md:ml-[250px] md:w-[calc(100%-250px)] lg:h-screen lg:flex lg:flex-col'>
       <Navbar/>
-      </div>
-      <div className='xl:flex justify-between items-center w-full  style={{ maxHeight: `calc(100vh - ${navbarHeight}) sm:mt-4'>
+      <div className='md:flex justify-between items-center w-full  style={{ maxHeight: `calc(100vh - ${navbarHeight}) sm:mt-4'>
         
       <div className="pt-2 px-3 xs:ml-8 ml-8">
         <div>
         <h1 className='text-sm font-bold'>Hi UDM,</h1>
         </div>
-        <div className='xl:flex xl:items-end gap-4'>
+        <div className='2xl:flex 2xl:items-end gap-4'>
             <h1 className='text-2xl font-bold'>Welcome to</h1>
         <h1 className=' text-primary font-family-marker gap-4 font-bold tracking-widest sm:pt-2 text-4xl'>MY TAXI DASHBOARD</h1>
         </div>
@@ -52,7 +50,7 @@ const Dashboard = () => {
         />
       </div>
       </div>
-      <div className="grid p-3 pt-0">
+      <div className="grid p-3 pt-0 mt-8">
       <div className="row__one grid xl:grid-cols-2 mb-2">
         <Analytics />
         <FAQs/>

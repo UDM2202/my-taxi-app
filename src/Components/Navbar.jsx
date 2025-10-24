@@ -17,7 +17,7 @@ setOpenMenu(!openMenu);
     { id: 6, icon: 'bi bi-gear-fill', label: 'Settings' },,
   ]
   return (
-    <div className='lg:hidden'>
+    <div className='md:hidden'>
 <div className="header flex p-6 text-primary font-family-marker gap-4 font-bold 
       text-2xl bg-sidebar justify-between">
         <div className='flex gap-4'>
@@ -32,8 +32,8 @@ setOpenMenu(!openMenu);
           </button>
 </div>
 
-<div className={`menu bg-black transition-all duration-700 ease-in-out
-  ${openMenu ? "max-h-screen opacity-100 translate-x-0 " : "max-h-0 opacity-0 overflow-hidden translate-x-full"} cursor-pointer z-50 absolute w-[70%] right-0 h-full flex flex-col justify-between top-0 fixed`}
+<div className={`menu fixed top-0 right-0 h-screen w-[70%] bg-black transition-all duration-700 ease-in-out  z-50 flex flex-col justify-between cursor-pointer
+  ${openMenu ? "max-h-screen opacity-100 translate-x-0" : "max-h-0 opacity-0 overflow-hidden translate-x-full"}`}
 >
 <div className="links p-8">
   <ul className='translate-y-15'>

@@ -10,7 +10,7 @@ const Payment = () => {
     },
     {
       image: Displaypic,
-      name: "To Eminem Santos",
+      name: "To Eminem",
       time: "Today, 08:49",
       amount: "-$25",
     },
@@ -28,7 +28,7 @@ const Payment = () => {
       </div>
       <div className="details">
         {transactions.map((item) => (
-          <div className="transaction-container relative flex justify-between items-center ">
+          <div className="transaction-container relative flex justify-between items-center lg:gap-8 ">
             <div className="top  flex justify-center items-center gap-4">
             <div className="image  w-10 my-4 rounded-full overflow-hidden">
             <img src={item.image} alt="pic"  className="w-full h-full object-cover"/>

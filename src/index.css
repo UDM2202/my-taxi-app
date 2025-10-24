@@ -3,10 +3,6 @@
 @import 'tailwindcss';
 
 
-*{
-  border-box: box-sizing;
-}
-
 
 @theme {
   --color-sidebar: #212121;
@@ -55,10 +51,11 @@ html {
 }
 
 .cards {
-  @apply bg-sidebar w-auto h-auto m-4 rounded-2xl p-4 
+  @apply bg-sidebar w-auto h-auto m-2 rounded-2xl p-4 overflow-hidden
 }
 .card {
-  @apply bg-sidebar w-auto h-auto m-4 rounded-2xl px-4 py-2}
+  @apply bg-sidebar w-auto h-auto m-2 rounded-2xl p-4 overflow-hidden
+}
 
 .card:hover {
   @apply bg-primary  text-black transition-all duration-500 ease-in-out
@@ -75,5 +72,4 @@ html {
       border-color: black !important;
     }
   }
-
 
